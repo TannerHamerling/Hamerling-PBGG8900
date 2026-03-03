@@ -1,0 +1,23 @@
+
+tjh75822@teach-sub1 ~$ mk dir Exercise_1
+-bash: mk: command not found
+tjh75822@teach-sub1 ~$ mkdir Exercise_1
+tjh75822@teach-sub1 ~$ cd Exercise_1
+tjh75822@teach-sub1 Exercise_1$ pwd
+/home/tjh75822/Exercise_1
+tjh75822@teach-sub1 Exercise_1$ ls
+Fasta_1.txt.txt  Fasta_2.txt.txt
+tjh75822@teach-sub1 Exercise_1$ nano script.sh
+tjh75822@teach-sub1 Exercise_1$ chmod +x script.sh
+tjh75822@teach-sub1 Exercise_1$ bash script.sh
+Counting sequences in fasta files...
+
+File: Fasta_1.txt.txt
+Number of sequences: 11
+
+File: Fasta_2.txt.txt
+Number of sequences: 4
+
+Code to transfer files from computer to directory
+scp ~/Downloads/Fasta_1.txt.txt tjh75822@teach.gacrc.uga.edu:~/Exercise_1/
+scp ~/Downloads/Fasta_2.txt.txt tjh75822@teach.gacrc.uga.edu:~/Exercise_1/
