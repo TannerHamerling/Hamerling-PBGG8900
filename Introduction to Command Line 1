@@ -1,10 +1,7 @@
 tjh75822@teach-sub1 ~$ cd /scratch/tjh75822
 tjh75822@teach-sub1 tjh75822$ pwd
 /scratch/tjh75822
-tjh75822@teach-sub1 tjh75822$ mk dir Commandline_Lab
--bash: mk: command not found
 tjh75822@teach-sub1 tjh75822$ mkdir Commandline_Lab
-mkdir: cannot create directory ‘Commandline_Lab’: File exists
 tjh75822@teach-sub1 tjh75822$ cd Commandline_Lab
 tjh75822@teach-sub1 Commandline_Lab$ pwd
 /scratch/tjh75822/Commandline_Lab
@@ -17,7 +14,50 @@ tjh75822@teach-sub1 Commandline_Lab$ ls
 Text_1.txt
 tjh75822@teach-sub1 Commandline_Lab$ ls -1
 Text_1.txt
-tjh75822@teach-sub1 Commandline_Lab$ ls - l 
-ls: cannot access '-': No such file or directory
-ls: cannot access 'l': No such file or directory
-tjh75822@teach-sub1 Commandline_Lab$ 
+tjh75822@teach-sub1 Commandline_Lab$ mv Text_1.txt Myfile_1.txt
+tjh75822@teach-sub1 Commandline_Lab$ ls
+Myfile_1.txt
+Export the file from Teaching Cluster to your Local computer.
+scp tjh75822@teach.gacrc.uga.edu:/scratch/tjh75822/Commandline_Lab/Myfile_1.txt .
+Export the file from Teaching Cluster to your Local computer.
+scp Myfile_1.txt tjh75822@teach.gacrc.uga.edu:/scratch/tjh75822/Commandline_Lab/
+tjh75822@teach-sub1 Commandline_Lab$ ls /scratch/tjh75822/Commandline_Lab/
+Myfile_1.txt
+tjh75822@teach-sub1 Commandline_Lab$ chmod 777 Myfile_1.txt 
+tjh75822@teach-sub1 Commandline_Lab$ ls -l
+total 1
+-rwxrwxrwx 1 tjh75822 pbgg8900_class 39 Mar  3 10:24 Myfile_1.txt
+Download the myGenes.txt file from local to the cluster
+scp ~/Downloads/mgGenes.txt tjh75822@teach.gacrc.uga.edu:/scratch/tjh75822/Commandline_Lab/
+tjh75822@teach-sub1 Commandline_Lab$ ls
+Myfile_1.txt  mgGenes.txt
+chmod 777 mgGenes.txt
+tjh75822@teach-sub1 Commandline_Lab$ ls -l
+total 13
+-rwxrwxrwx 1 tjh75822 pbgg8900_class    39 Mar  3 10:24 Myfile_1.txt
+-rwxrwxrwx 1 tjh75822 pbgg8900_class 13284 Mar  3 10:36 mgGenes.txt
+less  mgGenes.txt
+grep "MG" mgGenes.txt | wc -l
+525
+head mgGenes.txt
+MG_001	686	1828	+	dnaN
+MG_002	1828	2760	+	
+MG_003	2845	4797	+	gyrB
+MG_004	4812	7322	+	gyrA
+MG_005	7294	8547	+	serS
+MG_006	8551	9183	+	tmk
+MG_007	9156	9920	+	
+MG_008	9923	11251	+	
+MG_009	11251	12039	+	
+MG_010	12068	12724	+	
+tjh75822@teach-sub1 Commandline_Lab$ tail mgGenes.txt
+MG_462	566186	567640	-	gltX
+MG_463	567627	568406	-	
+MG_464	568399	569556	-	
+MG_465	569528	569914	-	rnpA
+MG_466	569883	570029	-	rpL34
+MG_467	570055	570990	-	
+MG_468	570994	576345	-	
+MG_526	576351	577205	-	
+MG_469	577268	578581	-	
+MG_470	579224	580033	-	
