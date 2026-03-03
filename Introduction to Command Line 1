@@ -1,0 +1,23 @@
+tjh75822@teach-sub1 ~$ cd /scratch/tjh75822
+tjh75822@teach-sub1 tjh75822$ pwd
+/scratch/tjh75822
+tjh75822@teach-sub1 tjh75822$ mk dir Commandline_Lab
+-bash: mk: command not found
+tjh75822@teach-sub1 tjh75822$ mkdir Commandline_Lab
+mkdir: cannot create directory ‘Commandline_Lab’: File exists
+tjh75822@teach-sub1 tjh75822$ cd Commandline_Lab
+tjh75822@teach-sub1 Commandline_Lab$ pwd
+/scratch/tjh75822/Commandline_Lab
+tjh75822@teach-sub1 Commandline_Lab$ ls
+Myfile_1.txt  Plus_genes.txt  mgGenes.txt
+tjh75822@teach-sub1 Commandline_Lab$ rm Myfile_1.txt Plus_genes.txt mgGenes.txt
+tjh75822@teach-sub1 Commandline_Lab$ ls
+tjh75822@teach-sub1 Commandline_Lab$ nano Text_1.txt
+tjh75822@teach-sub1 Commandline_Lab$ ls
+Text_1.txt
+tjh75822@teach-sub1 Commandline_Lab$ ls -1
+Text_1.txt
+tjh75822@teach-sub1 Commandline_Lab$ ls - l 
+ls: cannot access '-': No such file or directory
+ls: cannot access 'l': No such file or directory
+tjh75822@teach-sub1 Commandline_Lab$ 
