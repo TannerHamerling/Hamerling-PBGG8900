@@ -1,0 +1,165 @@
+tjh75822@teach-sub1 ~$ cd /scratch/tjh75822
+tjh75822@teach-sub1 tjh75822$ mkdir Genome_Assembly_Lab_2
+tjh75822@teach-sub1 tjh75822$ pwd
+/scratch/tjh75822
+tjh75822@teach-sub1 tjh75822$ cd Genome_Assembly_Lab_2
+tjh75822@teach-sub1 Genome_Assembly_Lab_2$ pwd
+/scratch/tjh75822/Genome_Assembly_Lab_2
+tjh75822@teach-sub1 Genome_Assembly_Lab_2$ cd
+tjh75822@teach-sub1 ~$ pwd
+/home/tjh75822
+tjh75822@teach-sub1 ~$ cd /scratch/tjh75822
+tjh75822@teach-sub1 tjh75822$ pwd
+/scratch/tjh75822
+tjh75822@teach-sub1 tjh75822$ ls -l
+total 56
+drwxr-xr-x 2 tjh75822 pbgg8900_class     3 Feb  4 15:45 Arabidopsis_Genome
+drwxr-xr-x 2 tjh75822 pbgg8900_class     4 Mar  3 10:36 Commandline_Lab
+drwxr-xr-x 2 tjh75822 pbgg8900_class     2 Mar  4 15:15 Genome_Assembly_Lab_2
+drwxr-xr-x 2 tjh75822 pbgg8900_class    10 Feb 20 15:51 Jellyfish
+drwxr-xr-x 2 tjh75822 pbgg8900_class     2 Mar  3 11:30 commandline2
+drwxr-xr-x 7 tjh75822 pbgg8900_class    11 Feb 18 15:37 genome_assembly
+-rw-r--r-- 1 tjh75822 pbgg8900_class 13284 Mar  3 10:33 mgGenes.txt
+tjh75822@teach-sub1 tjh75822$ mkdir Rose_Genome_Assembly
+tjh75822@teach-sub1 tjh75822$ cd Rose_Genome_Assembly
+tjh75822@teach-sub1 Rose_Genome_Assembly$ mk dir Raw_Data
+-bash: mk: command not found
+tjh75822@teach-sub1 Rose_Genome_Assembly$ mkdir Raw_Data
+tjh75822@teach-sub1 Rose_Genome_Assembly$ mkdir Analysis
+tjh75822@teach-sub1 Rose_Genome_Assembly$ mkdir Results
+tjh75822@teach-sub1 Rose_Genome_Assembly$ ls -l
+total 2
+drwxr-xr-x 2 tjh75822 pbgg8900_class 2 Mar  4 15:19 Analysis
+drwxr-xr-x 2 tjh75822 pbgg8900_class 2 Mar  4 15:19 Raw_Data
+drwxr-xr-x 2 tjh75822 pbgg8900_class 2 Mar  4 15:19 Results
+tjh75822@teach-sub1 Rose_Genome_Assembly$ cd Raw_data/
+-bash: cd: Raw_data/: No such file or directory
+tjh75822@teach-sub1 Rose_Genome_Assembly$ cd Raw_Data/
+tjh75822@teach-sub1 Raw_Data$ ls -l
+total 0
+tjh75822@teach-sub1 Raw_Data$ mkdir Pacbio_Hifi_Data
+tjh75822@teach-sub1 Raw_Data$ mkdir Hi-C_Data
+tjh75822@teach-sub1 Raw_Data$ ls -l
+total 1
+drwxr-xr-x 2 tjh75822 pbgg8900_class 2 Mar  4 15:21 Hi-C_Data
+drwxr-xr-x 2 tjh75822 pbgg8900_class 2 Mar  4 15:21 Pacbio_Hifi_Data
+tjh75822@teach-sub1 Raw_Data$ cd Pacbio_Hifi_Data
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cp /work/pbgg8900/instructor_data/Genome_Assembly_Data/Pacbio_Data/subset_SRR29286022.fastq .
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cd Hi-C_Data
+-bash: cd: Hi-C_Data: No such file or directory
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cp /work/pbgg8900/instructor_data/Genome_Assembly_Data/Hi-C_Data/subset*.fastq .
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ ls -l
+total 341658
+-rwxr-xr-x 1 tjh75822 pbgg8900_class 421635631 Mar  4 15:22 subset_SRR29286022.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_1.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_2.fastq
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cd ..
+tjh75822@teach-sub1 Raw_Data$ cd Hi-C_Data
+tjh75822@teach-sub1 Hi-C_Data$ ls -l
+total 0
+tjh75822@teach-sub1 Hi-C_Data$ cp /work/pbgg8900/instructor_data/Genome_Assembly_Data/Hi-C_Data/subset*.fastq .
+tjh75822@teach-sub1 Hi-C_Data$ ls -l
+total 40421
+-rwxr-xr-x 1 tjh75822 pbgg8900_class 45263909 Mar  4 15:24 subset_SRR29288224_1.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class 45263909 Mar  4 15:24 subset_SRR29288224_2.fastq
+tjh75822@teach-sub1 Hi-C_Data$ cd ..
+tjh75822@teach-sub1 Raw_Data$ cd Pacbio_Hifi_Data
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ ls -l
+total 341658
+-rwxr-xr-x 1 tjh75822 pbgg8900_class 421635631 Mar  4 15:22 subset_SRR29286022.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_1.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_2.fastq
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cp /work/pbgg8900/instructor_data/Genome_Assembly_Data/Pacbio_Data/subset_SRR29286022.fastq .
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ ls -l
+total 341658
+-rwxr-xr-x 1 tjh75822 pbgg8900_class 421635631 Mar  4 15:26 subset_SRR29286022.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_1.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_2.fastq
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cd ..
+tjh75822@teach-sub1 Raw_Data$ cd ..
+tjh75822@teach-sub1 Rose_Genome_Assembly$ ls -l
+total 2
+drwxr-xr-x 2 tjh75822 pbgg8900_class 2 Mar  4 15:19 Analysis
+drwxr-xr-x 4 tjh75822 pbgg8900_class 4 Mar  4 15:21 Raw_Data
+drwxr-xr-x 2 tjh75822 pbgg8900_class 2 Mar  4 15:19 Results
+tjh75822@teach-sub1 Rose_Genome_Assembly$ cd Analysis
+tjh75822@teach-sub1 Analysis$ mkdir 01_Hifiasm
+tjh75822@teach-sub1 Analysis$ ls -l
+total 1
+drwxr-xr-x 2 tjh75822 pbgg8900_class 2 Mar  4 15:27 01_Hifiasm
+tjh75822@teach-sub1 Analysis$ cd ..
+tjh75822@teach-sub1 Rose_Genome_Assembly$ cd Results/
+tjh75822@teach-sub1 Results$ mk dir 01_Hifiasm_Results
+-bash: mk: command not found
+tjh75822@teach-sub1 Results$ mkdir 01_Hifiasm_Results
+tjh75822@teach-sub1 Results$ ls -l
+total 1
+drwxr-xr-x 2 tjh75822 pbgg8900_class 2 Mar  4 15:28 01_Hifiasm_Results
+tjh75822@teach-sub1 Results$ cd ..
+tjh75822@teach-sub1 Rose_Genome_Assembly$ cd Raw_Data/
+tjh75822@teach-sub1 Raw_Data$ cd Pacbio_Hifi_Data
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ ls -l
+total 341658
+-rwxr-xr-x 1 tjh75822 pbgg8900_class 421635631 Mar  4 15:26 subset_SRR29286022.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_1.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_2.fastq
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ pwd
+/scratch/tjh75822/Rose_Genome_Assembly/Raw_Data/Pacbio_Hifi_Data
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cd ..
+tjh75822@teach-sub1 Raw_Data$ cd Analysis/
+-bash: cd: Analysis/: No such file or directory
+tjh75822@teach-sub1 Raw_Data$ ls -l
+total 1
+drwxr-xr-x 2 tjh75822 pbgg8900_class 4 Mar  4 15:24 Hi-C_Data
+drwxr-xr-x 2 tjh75822 pbgg8900_class 5 Mar  4 15:23 Pacbio_Hifi_Data
+tjh75822@teach-sub1 Raw_Data$ cd Pacbio_Hifi_Data
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cd 01_Hifiasm
+-bash: cd: 01_Hifiasm: No such file or directory
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cd..
+-bash: cd..: command not found
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cd ..
+tjh75822@teach-sub1 Raw_Data$ pwd
+/scratch/tjh75822/Rose_Genome_Assembly/Raw_Data
+tjh75822@teach-sub1 Raw_Data$ ls -l
+total 1
+drwxr-xr-x 2 tjh75822 pbgg8900_class 4 Mar  4 15:24 Hi-C_Data
+drwxr-xr-x 2 tjh75822 pbgg8900_class 5 Mar  4 15:23 Pacbio_Hifi_Data
+tjh75822@teach-sub1 Raw_Data$ cd Pacbio_Hifi_Data
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ ls -l
+total 341658
+-rwxr-xr-x 1 tjh75822 pbgg8900_class 421635631 Mar  4 15:26 subset_SRR29286022.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_1.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_2.fastq
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cd ..
+tjh75822@teach-sub1 Raw_Data$ ls -l
+total 1
+drwxr-xr-x 2 tjh75822 pbgg8900_class 4 Mar  4 15:24 Hi-C_Data
+drwxr-xr-x 2 tjh75822 pbgg8900_class 5 Mar  4 15:23 Pacbio_Hifi_Data
+tjh75822@teach-sub1 Raw_Data$ cd Pacbio_Hifi_Data/
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ ln -s /scratch/tjh75822/Rose_Genome_Assembly/Raw_Data/Pacbio_Hifi_Data
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ ls -l
+total 341658
+lrwxrwxrwx 1 tjh75822 pbgg8900_class        64 Mar  4 15:35 Pacbio_Hifi_Data -> /scratch/tjh75822/Rose_Genome_Assembly/Raw_Data/Pacbio_Hifi_Data
+-rwxr-xr-x 1 tjh75822 pbgg8900_class 421635631 Mar  4 15:26 subset_SRR29286022.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_1.fastq
+-rwxr-xr-x 1 tjh75822 pbgg8900_class  45263909 Mar  4 15:23 subset_SRR29288224_2.fastq
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ pwd
+/scratch/tjh75822/Rose_Genome_Assembly/Raw_Data/Pacbio_Hifi_Data
+tjh75822@teach-sub1 Pacbio_Hifi_Data$ cd ..
+tjh75822@teach-sub1 Raw_Data$ cd ..
+tjh75822@teach-sub1 Rose_Genome_Assembly$ cd Analysis/
+tjh75822@teach-sub1 Analysis$ cd 01_Hifiasm
+tjh75822@teach-sub1 01_Hifiasm$ pwd
+/scratch/tjh75822/Rose_Genome_Assembly/Analysis/01_Hifiasm
+tjh75822@teach-sub1 01_Hifiasm$ ln -s /scratch/tjh75822/Rose_Genome_Assembly/Raw_Data/Pacbio_Hifi_Data/subset_SRR29286022.fastq .
+tjh75822@teach-sub1 01_Hifiasm$ pwd
+/scratch/tjh75822/Rose_Genome_Assembly/Analysis/01_Hifiasm
+tjh75822@teach-sub1 01_Hifiasm$ ls -l
+total 1
+lrwxrwxrwx 1 tjh75822 pbgg8900_class 89 Mar  4 15:38 subset_SRR29286022.fastq -> /scratch/tjh75822/Rose_Genome_Assembly/Raw_Data/Pacbio_Hifi_Data/subset_SRR29286022.fastq
+tjh75822@teach-sub1 01_Hifiasm$ ls
+subset_SRR29286022.fastq
+tjh75822@teach-sub1 01_Hifiasm$ 
+
+Step 4: Run hifiasm with and without Hi-C data.
+
